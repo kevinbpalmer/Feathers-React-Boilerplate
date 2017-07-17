@@ -9,13 +9,13 @@ You need to run two commands...
 1.)
 ```
 git clone https://github.com/kevinbpalmer/Feathers-React-Boilerplate.git
-cd boilerplate Feathers-React-Boilerplate
+cd Feathers-React-Boilerplate
 yarn install
 yarn start
 ```
 2.)
 ```
-cd boilerplate Feathers-React-Boilerplate/api
+cd Feathers-React-Boilerplate/api
 yarn install
 yarn start or yarn dev
 ```
