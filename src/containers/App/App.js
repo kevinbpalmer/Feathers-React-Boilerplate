@@ -13,12 +13,10 @@ import Footer from 'components/Footer';
 // stylesheet
 import './globals.styl';
 
-class App extends Component {
-  componentDidMount() {
-    // needed for material-ui
-    injectTapEventPlugin();
-  }
+// needed for material-ui
+injectTapEventPlugin();
 
+class App extends Component {
   render() {
     return (
        <Router>
