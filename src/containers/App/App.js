@@ -10,9 +10,6 @@ import Routes from 'containers/Routes';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 
-// actions
-import {test} from 'actions/Test';
-
 // stylesheet
 import './globals.styl';
 
@@ -20,10 +17,6 @@ class App extends Component {
   componentDidMount() {
     // needed for material-ui
     injectTapEventPlugin();
-
-    // test dispatch of a redux action
-    this.props.dispatch(test());
-    console.log(this.props);
   }
 
   render() {
@@ -44,7 +37,9 @@ class App extends Component {
 }
 
 function mapStateToProps(store) {
-  return {testProps: store.test.test};
+  return {
+
+  };
 }
 
 export default withRouter(connect(mapStateToProps)(App));
